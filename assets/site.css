@@ -11,8 +11,8 @@
   --paper: #f5e8c8;
   --shell: min(1180px, calc(100vw - 48px));
   --radius-control: 999px;
-  --radius-card: 22px;
-  --radius-panel: 28px;
+  --radius-card: 30px;
+  --radius-panel: 38px;
   --title-1: clamp(48px, 5.25vw, 68px);
   --title-2: clamp(32px, 3.4vw, 46px);
   --title-3: clamp(21px, 2vw, 27px);
