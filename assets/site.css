@@ -31,9 +31,18 @@ img { display: block; max-width: 100%; }
 .brand { display: inline-flex; width: fit-content; flex-direction: column; gap: 4px; }
 .brand-en { color: var(--gold); font-size: 10px; font-weight: 800; letter-spacing: .28em; }
 .brand-cn { font-family: ui-serif, "Songti SC", "STSong", serif; color: var(--ink); font-size: 23px; font-weight: 700; letter-spacing: .03em; }
+html[data-language="en"] .brand { gap: 0; }
+html[data-language="en"] .brand-cn { display: none; }
 nav { display: flex; align-items: center; gap: 28px; font-size: 13px; color: rgba(247,241,231,.75); }
 nav a { transition: color .2s; }
 nav a:hover, .text-link:hover, .back-link:hover { color: var(--gold); }
+.header-actions, .inner-actions { justify-self: end; display: flex; align-items: center; gap: 12px; }
+.language-switch { display: inline-flex; overflow: hidden; border: 1px solid rgba(247,241,231,.22); border-radius: 2px; }
+.language-switch button { min-width: 32px; border: 0; border-right: 1px solid rgba(247,241,231,.18); padding: 6px 8px; background: transparent; color: rgba(247,241,231,.6); font: 700 11px/1 -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", sans-serif; letter-spacing: .04em; cursor: pointer; transition: background .2s ease, color .2s ease; }
+.language-switch button:last-child { border-right: 0; }
+.language-switch button:hover { color: var(--ink); }
+.language-switch button[aria-pressed="true"] { background: rgba(234,185,90,.18); color: var(--gold); }
+.language-switch button:focus-visible { position: relative; z-index: 1; outline: 2px solid var(--gold); outline-offset: -2px; }
 .site-status { justify-self: end; border: 1px solid rgba(234,185,90,.24); border-radius: 2px; padding: 7px 11px; color: rgba(247,241,231,.65); font-size: 11px; }
 
 .hero { position: relative; display: grid; grid-template-columns: minmax(0, .9fr) minmax(440px, 1.1fr); min-height: min(780px, calc(100vh - 88px)); align-items: center; gap: clamp(40px, 7vw, 110px); padding-block: 60px 84px; }
@@ -68,7 +77,7 @@ h1 em, h2 em { color: #f3c56a; font-style: normal; }
 .orbit-two { width: 250px; height: 250px; left: 2%; bottom: 60px; border-radius: 50%; transform: rotateX(73deg) rotateZ(30deg); opacity: .62; }
 .paper-strip { position: absolute; z-index: 2; left: 2%; top: 42%; width: 270px; border: 1px solid rgba(247,226,177,.65); padding: 10px 15px; background: linear-gradient(110deg, #f2dec0, #9e221a 47%, #f5dfbd); color: #50110c; font-family: ui-serif, serif; font-size: 11px; font-weight: 800; letter-spacing: .16em; text-align: center; transform: rotate(-25deg) skewX(-9deg); box-shadow: 15px 17px 35px rgba(0,0,0,.27); }
 .stage-note { position: absolute; z-index: 4; left: 0; bottom: 23px; max-width: 210px; color: rgba(247,241,231,.57); font-size: 12px; line-height: 1.6; }
-.stage-note span { display: block; margin-bottom: 6px; color: var(--gold); font-size: 11px; letter-spacing: .18em; }
+.stage-note > span:first-child { display: block; margin-bottom: 6px; color: var(--gold); font-size: 11px; letter-spacing: .18em; }
 
 .manifesto, .state-section, .privacy-section, .closing { padding-block: clamp(90px, 12vw, 165px); }
 .manifesto { border-top: 1px solid rgba(255,238,197,.1); }
@@ -116,7 +125,9 @@ h1 em, h2 em { color: #f3c56a; font-style: normal; }
 .footer-links a:hover { color: var(--gold); }
 
 .inner-page { background: radial-gradient(circle at 85% 10%, #310404, #0a0303 58%); }
+.inner-page .site-header { grid-template-columns: 1fr auto; }
 .back-link { justify-self: end; color: rgba(247,241,231,.7); font-size: 13px; }
+.inner-actions { gap: 18px; }
 .policy { max-width: 830px; padding-block: 100px 140px; }
 .policy h1 { max-width: 760px; margin-bottom: 22px; font-size: clamp(42px, 4.7vw, 60px); }
 .policy-lead { max-width: 620px; margin-bottom: 75px; color: var(--muted); font-size: 17px; line-height: 1.85; }
@@ -160,6 +171,9 @@ h1 em, h2 em { color: #f3c56a; font-style: normal; }
 @media (max-width: 560px) {
   :root { --shell: min(100vw - 32px, 1180px); }
   .site-status { font-size: 10px; padding: 6px 8px; }
+  .header-actions { gap: 8px; }
+  .inner-actions { gap: 12px; }
+  .back-link { font-size: 12px; }
   .hero { gap: 14px; min-height: auto; padding-block: 42px 70px; }
   h1 { font-size: clamp(44px, 12vw, 54px); line-height: 1.12; }
   .hero-lead { font-size: 15px; }

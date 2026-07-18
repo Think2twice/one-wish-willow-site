@@ -1,58 +1,64 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-page="privacy">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="许愿柳的本地保存与隐私说明。">
+  <meta name="description" data-i18n-content="meta.description" content="许愿柳的本地保存与隐私说明。">
   <meta name="theme-color" content="#140505">
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <link rel="canonical" href="https://onewishwillow.formyweblym.top/privacy/">
   <link rel="stylesheet" href="/assets/site.css">
-  <title>隐私说明｜许愿柳</title>
+  <title data-i18n="meta.title">隐私说明｜许愿柳</title>
 </head>
 <body class="inner-page">
-  <a class="skip-link" href="#main">跳到正文</a>
+  <a class="skip-link" href="#main" data-i18n="common.skipToContent">跳到正文</a>
   <div class="page-noise" aria-hidden="true"></div>
   <header class="site-header shell">
-    <a class="brand" href="/" aria-label="许愿柳首页">
+    <a class="brand" href="/" aria-label="许愿柳首页" data-i18n-aria-label="common.homeAria">
       <span class="brand-en">ONE WISH WILLOW</span>
       <span class="brand-cn">许愿柳</span>
     </a>
-    <a class="back-link" href="/">← 返回产品页</a>
+    <div class="inner-actions">
+      <div class="language-switch" role="group" aria-label="语言" data-i18n-aria-label="common.languageAria">
+        <button type="button" data-language="zh-CN" aria-pressed="true">中</button>
+        <button type="button" data-language="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="back-link" href="/" data-i18n="common.backToProduct">← 返回产品页</a>
+    </div>
   </header>
 
   <main id="main" class="policy shell">
-    <p class="eyebrow">隐私说明</p>
-    <h1>这一愿，<em>怎么保存。</em></h1>
-    <p class="policy-lead">这里说明许愿柳的本地保存方式。保存、同步或分析功能发生变化时，会同步更新本页。</p>
+    <p class="eyebrow" data-i18n="privacyPage.eyebrow">隐私说明</p>
+    <h1 data-i18n-html="privacyPage.title">这一愿，<em>怎么保存。</em></h1>
+    <p class="policy-lead" data-i18n="privacyPage.lead">这里说明许愿柳的本地保存方式。保存、同步或分析功能发生变化时，会同步更新本页。</p>
 
     <section>
-      <h2>愿望的保存方式</h2>
-      <p>你写下或录下的愿望，在未封存之前只用于当前这次 App 运行。选择封存后，App 才会把这条内容存到设备本地的 Application Support 空间。</p>
+      <h2 data-i18n="privacyPage.storage.title">愿望的保存方式</h2>
+      <p data-i18n="privacyPage.storage.body">你写下或录下的愿望，在未封存之前只用于当前这次 App 运行。选择封存后，App 才会把这条内容存到设备本地的 Application Support 空间。</p>
     </section>
     <section>
-      <h2>不同步到 iCloud</h2>
-      <p>许愿柳不使用 iCloud、Keychain 或云端同步来保存封存内容。删除 App 后，本地沙盒里的内容会一并清除。</p>
+      <h2 data-i18n="privacyPage.sync.title">不同步到 iCloud</h2>
+      <p data-i18n="privacyPage.sync.body">许愿柳不使用 iCloud、Keychain 或云端同步来保存封存内容。删除 App 后，本地沙盒里的内容会一并清除。</p>
     </section>
     <section>
-      <h2>网站不提供模型下载</h2>
-      <p>本网站只展示真实 App 截图和网页自身的 CSS 效果，不包含 USDZ、Blender 文件、原始贴图或可下载的 3D 模型。</p>
+      <h2 data-i18n="privacyPage.assets.title">网站不提供模型下载</h2>
+      <p data-i18n="privacyPage.assets.body">本网站只展示真实 App 截图和网页自身的 CSS 效果，不包含 USDZ、Blender 文件、原始贴图或可下载的 3D 模型。</p>
     </section>
     <section>
-      <h2>说明更新</h2>
-      <p>以后若加入新的保存、同步或分析功能，会先更新这份说明。</p>
+      <h2 data-i18n="privacyPage.updates.title">说明更新</h2>
+      <p data-i18n="privacyPage.updates.body">以后若加入新的保存、同步或分析功能，会先更新这份说明。</p>
     </section>
   </main>
 
   <footer class="site-footer shell">
-    <a class="brand" href="/" aria-label="许愿柳首页">
+    <a class="brand" href="/" aria-label="许愿柳首页" data-i18n-aria-label="common.homeAria">
       <span class="brand-en">ONE WISH WILLOW</span>
       <span class="brand-cn">许愿柳</span>
     </a>
     <p>© <span data-year>2026</span> One Wish Willow</p>
     <div class="footer-links">
-      <a href="/support/">使用支持</a>
-      <a href="/privacy/">隐私说明</a>
+      <a href="/support/" data-i18n="footer.support">使用支持</a>
+      <a href="/privacy/" data-i18n="footer.privacy">隐私说明</a>
     </div>
   </footer>
   <script src="/assets/site.js"></script>

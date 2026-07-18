@@ -1,104 +1,110 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-page="support">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="许愿柳的使用支持、常见问题和联系开发者方式。">
+  <meta name="description" data-i18n-content="meta.description" content="许愿柳的使用支持、常见问题和联系开发者方式。">
   <meta name="theme-color" content="#140505">
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <link rel="canonical" href="https://onewishwillow.formyweblym.top/support/">
   <link rel="stylesheet" href="/assets/site.css">
-  <title>使用支持｜许愿柳</title>
+  <title data-i18n="meta.title">使用支持｜许愿柳</title>
 </head>
 <body class="inner-page">
-  <a class="skip-link" href="#main">跳到正文</a>
+  <a class="skip-link" href="#main" data-i18n="common.skipToContent">跳到正文</a>
   <div class="page-noise" aria-hidden="true"></div>
   <header class="site-header shell">
-    <a class="brand" href="/" aria-label="许愿柳首页">
+    <a class="brand" href="/" aria-label="许愿柳首页" data-i18n-aria-label="common.homeAria">
       <span class="brand-en">ONE WISH WILLOW</span>
       <span class="brand-cn">许愿柳</span>
     </a>
-    <a class="back-link" href="/">← 返回产品页</a>
+    <div class="inner-actions">
+      <div class="language-switch" role="group" aria-label="语言" data-i18n-aria-label="common.languageAria">
+        <button type="button" data-language="zh-CN" aria-pressed="true">中</button>
+        <button type="button" data-language="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="back-link" href="/" data-i18n="common.backToProduct">← 返回产品页</a>
+    </div>
   </header>
 
   <main id="main" class="support shell">
-    <p class="eyebrow">使用支持</p>
-    <h1>使用支持</h1>
-    <p class="policy-lead">这里汇总使用时常见的问题，以及联系开发者支持的方式。</p>
+    <p class="eyebrow" data-i18n="support.eyebrow">使用支持</p>
+    <h1 data-i18n="support.title">使用支持</h1>
+    <p class="policy-lead" data-i18n="support.lead">这里汇总使用时常见的问题，以及联系开发者支持的方式。</p>
 
     <section class="support-section" aria-labelledby="contact-title">
       <div>
-        <p class="section-kicker">联系支持</p>
-        <h2 id="contact-title">联系支持</h2>
+        <p class="section-kicker" data-i18n="support.contact.kicker">联系支持</p>
+        <h2 id="contact-title" data-i18n="support.contact.title">联系支持</h2>
       </div>
       <div>
-        <p>遇到无法继续、画面异常或对保存方式有疑问时，请发送邮件。我们通常会在 <strong>2 个工作日内</strong>回复。</p>
+        <p data-i18n-html="support.contact.body">遇到无法继续、画面异常或对保存方式有疑问时，请发送邮件。我们通常会在 <strong>2 个工作日内</strong>回复。</p>
         <a class="support-email" href="mailto:docdreamer@outlook.com?subject=%E8%AE%B8%E6%84%BF%E6%9F%B3%20%E4%BD%BF%E7%94%A8%E6%94%AF%E6%8C%81">docdreamer@outlook.com</a>
-        <p class="support-note"><strong>请勿发送愿望原文、录音、Apple ID 密码、验证码、支付信息或其他敏感内容。</strong>支持请求只需要描述产品问题。</p>
+        <p class="support-note" data-i18n-html="support.contact.note"><strong>请勿发送愿望原文、录音、Apple ID 密码、验证码、支付信息或其他敏感内容。</strong>支持请求只需要描述产品问题。</p>
       </div>
     </section>
 
     <section class="support-section" aria-labelledby="include-title">
       <div>
-        <p class="section-kicker">问题信息</p>
-        <h2 id="include-title">邮件里写什么</h2>
+        <p class="section-kicker" data-i18n="support.details.kicker">问题信息</p>
+        <h2 id="include-title" data-i18n="support.details.title">邮件里写什么</h2>
       </div>
       <div>
         <ul class="support-list">
-          <li>设备型号、系统版本和 App 版本。</li>
-          <li>问题出现前，你完成了哪些操作。</li>
-          <li>你预期看到的结果，以及实际发生了什么。</li>
-          <li>必要时附上一张不含个人信息的截图。</li>
+          <li data-i18n="support.details.one">设备型号、系统版本和 App 版本。</li>
+          <li data-i18n="support.details.two">问题出现前，你完成了哪些操作。</li>
+          <li data-i18n="support.details.three">你预期看到的结果，以及实际发生了什么。</li>
+          <li data-i18n="support.details.four">必要时附上一张不含个人信息的截图。</li>
         </ul>
       </div>
     </section>
 
     <section class="support-section" aria-labelledby="faq-title">
       <div>
-        <p class="section-kicker">常见问题</p>
-        <h2 id="faq-title">常见问题</h2>
+        <p class="section-kicker" data-i18n="support.faq.kicker">常见问题</p>
+        <h2 id="faq-title" data-i18n="support.faq.title">常见问题</h2>
       </div>
       <div class="support-faq">
         <article>
-          <h3>需要创建账号吗？</h3>
-          <p>不需要。许愿柳没有注册、登录或订阅账号流程。</p>
+          <h3 data-i18n="support.faq.one.question">需要创建账号吗？</h3>
+          <p data-i18n="support.faq.one.answer">不需要。许愿柳没有注册、登录或订阅账号流程。</p>
         </article>
         <article>
-          <h3>愿望会同步到云端吗？</h3>
-          <p>不会。当前设计不使用 iCloud 或开发者服务器来保存封存愿望；它只留在这台设备的本地空间。</p>
+          <h3 data-i18n="support.faq.two.question">愿望会同步到云端吗？</h3>
+          <p data-i18n="support.faq.two.answer">不会。当前设计不使用 iCloud 或开发者服务器来保存封存愿望；它只留在这台设备的本地空间。</p>
         </article>
         <article>
-          <h3>掰断以后还能做什么？</h3>
-          <p>掰断后可以回看这一愿，也可以主动选择封存。封存不是分享，仍然只由你在本机回看。</p>
+          <h3 data-i18n="support.faq.three.question">掰断以后还能做什么？</h3>
+          <p data-i18n="support.faq.three.answer">掰断后可以回看这一愿，也可以主动选择封存。封存不是分享，仍然只由你在本机回看。</p>
         </article>
         <article>
-          <h3>App 意外退出怎么办？</h3>
-          <p>先重新打开 App 并观察是否能回到当前状态；若问题重复出现，请按上面的信息清单联系我们。</p>
+          <h3 data-i18n="support.faq.four.question">App 意外退出怎么办？</h3>
+          <p data-i18n="support.faq.four.answer">先重新打开 App 并观察是否能回到当前状态；若问题重复出现，请按上面的信息清单联系我们。</p>
         </article>
       </div>
     </section>
 
     <section class="support-section" aria-labelledby="privacy-title">
       <div>
-        <p class="section-kicker">隐私</p>
-        <h2 id="privacy-title">先保护再排查</h2>
+        <p class="section-kicker" data-i18n="support.privacy.kicker">隐私</p>
+        <h2 id="privacy-title" data-i18n="support.privacy.title">先保护再排查</h2>
       </div>
       <div>
-        <p>我们不需要你的愿望内容就能处理大多数问题。请优先提供操作步骤与环境信息；如要发送截图，先遮住任何私人文字或录音相关信息。</p>
-        <a class="text-link" href="/privacy/">阅读产品隐私说明 <span aria-hidden="true">→</span></a>
+        <p data-i18n="support.privacy.body">我们不需要你的愿望内容就能处理大多数问题。请优先提供操作步骤与环境信息；如要发送截图，先遮住任何私人文字或录音相关信息。</p>
+        <a class="text-link" href="/privacy/" data-i18n="privacy.link">阅读产品隐私说明 →</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer shell">
-    <a class="brand" href="/" aria-label="许愿柳首页">
+    <a class="brand" href="/" aria-label="许愿柳首页" data-i18n-aria-label="common.homeAria">
       <span class="brand-en">ONE WISH WILLOW</span>
       <span class="brand-cn">许愿柳</span>
     </a>
     <p>© <span data-year>2026</span> One Wish Willow</p>
     <div class="footer-links">
-      <a href="/support/">使用支持</a>
-      <a href="/privacy/">隐私说明</a>
+      <a href="/support/" data-i18n="footer.support">使用支持</a>
+      <a href="/privacy/" data-i18n="footer.privacy">隐私说明</a>
     </div>
   </footer>
   <script src="/assets/site.js"></script>
